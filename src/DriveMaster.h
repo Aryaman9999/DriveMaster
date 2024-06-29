@@ -32,7 +32,7 @@ public:
    * @param value The command value to write.
    * @param telemetry Flag indicating telemetry presence.
    */
-  virtual void write(uint16_t value, bool telemetery = false);
+  virtual void write(uint16_t value, bool telemetry = false);
   /**
    * @brief Send a command to the motor.
    * @param value The command value to send.
@@ -47,5 +47,7 @@ public:
 protected:
   int _pin; /**< Pin number for motor control. */
 };
+
 #include "dshot.h"
-#endif
+
+#endif // DRIVEMASTER_H
